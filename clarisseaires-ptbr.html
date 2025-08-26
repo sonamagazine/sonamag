@@ -1,224 +1,87 @@
+
 <!DOCTYPE html>
-<html class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SONA presents Clarisse Aires / SONA MAGAZINE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background: white;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .box-wrap {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SONA MAGAZINE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="SONA is a magazine dedicated to experimentation in music and other sound practices. Based in Brazil." />
 
-        /* Navbar */
-        header .row {
-            display: flex;
-            align-items: center; /* alinha logo, menu e ícones verticalmente */
-        }
-        .nav.text-center {
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-            gap: 22px;
-            flex-wrap: nowrap;
-            padding-left: 0;
-            margin: 0;
-            list-style: none;
-        }
-        .nav.text-center li { display: inline-block; }
-        .nav.text-center li a { display: inline-block; padding: 6px 4px; color: inherit; text-decoration: none; }
-        @media (max-width: 768px) {
-            .nav.text-center { flex-wrap: wrap; gap: 12px; }
-            header .row { flex-wrap: wrap; }
-        }
-        .fh5co-navbar-brand img { display: block; max-width: 100%; height: auto; }
-        .nav .active a { font-weight: bold; color: #E1306C; }
 
-        /* Conteúdo central */
-        .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .artist-name {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 60px;
-            font-size: 28px;
-        }
-        .article-title {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 30px;
-            font-size: 22px;
-        }
-        .artist-name .line {
-            display: block;
-            margin-bottom: 8px;
-        }
-        .artist-name .artist {
-            margin-bottom: 30px;
-        }
+  	<!-- Facebook and Twitter integration -->
 
-        .artist-image {
-            max-width: 720px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 1.5em;
-        }
+<meta property="og:title" content="SONA Magazine" />
+<meta property="og:description" content="Music and sonic practices with an experimental pulse." />
+<meta property="og:image" content="https://sonamag.com/images/sona-logo-retangular.png"/>
+<meta property="og:url" content="https://sonamag.com" />
+<meta property="og:site_name" content="SONA Magazine" />
 
-.language-switch {
-  max-width: 720px;
-  width: 100%;
-  margin: -20px auto 30px auto; /* ajusta espaçamento */
-  text-align: right; /* alinha à direita, mesmo do autor */
-}
+<meta name="twitter:title" content="SONA Magazine" />
+<meta name="twitter:description" content="Music and sonic practices with an experimental pulse." />
+<meta name="twitter:image" content="https://sonamag.com/images/sona-logo-retangular.png" />
+<meta name="twitter:url" content="https://sonamag.com" />
+<meta name="twitter:card" content="summary_large_image" />
 
-.language-switch a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none; /* remove underline do link */
-}
 
-.language-switch img {
-  display: block;
-  margin: 0 auto;
-  width: 30px;
-  height: auto;
-}
 
-.language-switch span {
-  display: block;
-  font-weight: bold; /* negrito */
-  font-size: 12px;
-  color: black; /* cor preta */
-}
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="icon" href="images/favicon.png" type="image/png">
 
-.language-switch a:link span,
-.language-switch a:visited span,
-.language-switch a:hover span,
-.language-switch a:active span {
-  color: black; /* força sempre preto */
-}
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-        /* Autor */
-        .author-name {
-            text-align: right;
-            font-size: 14px;
-            font-style: italic;
-            margin: 10px 0 30px 0;
-            max-width: 720px;
-            width: 100%;
-            margin-bottom: 4em;
-        }
-        .author-bio {
-            max-width: 720px;
-            margin: 40px auto 20px auto;
-            text-align: left;
-            font-size: 14px;
-            font-style: italic;
-            line-height: 1.5;
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-        }
-        .author-bio .author-photo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 2px;
-        }
+	<link rel="stylesheet" href="css/style.css">
 
-        /* Artigo */
-        .artist-bio {
-            max-width: 720px;
-            text-align: justify;
-            line-height: 1.8;
-            padding: 20px;
-            margin: 0 auto 40px auto;
-        }
-        .artist-bio p {
-            margin-bottom: 1.5em;
-            text-indent: 0.5in;
-        }
 
-        /* Footer */
-        footer#footer {
-            width: 100%;
-            padding: 10px 20px;
-            text-align: right;
-            background: white;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
-<div class="box-wrap">
-    <header role="banner" id="fh5co-header">
-        <nav class="navbar navbar-default">
-            <div class="row" style="align-items:center;">
-                <div class="col-md-3">
-                    <div class="fh5co-navbar-brand">
-                        <a class="fh5co-logo" href="index.html">
-                            <img src="images/sona-logo-small.png" alt="SONA Logo" width="65" height="65">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav text-center">
-                        <li><a href="index.html"><span>about</span></a></li>
-                        <li class="active"><a href="index.html"><span>articles</span></a></li>
-                        <li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="social">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li>
-  <a href="https://www.instagram.com/sonamagazine/" target="_blank" rel="noopener noreferrer">
-    <i class="icon-instagram"></i>
-  </a>
-</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+	</head>
+	<body>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="index.html"><img src="images/sona-logo-small.png" alt="SONA Logo"></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav text-center">
+								<li><a href="about.html"><span>about</span></a></li>
+								<li class="active"><a href="index.html">writings</a></li>
+								<li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
+								<li><a href="contact.html">contact</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="social">
+								<li><a href="https://www.instagram.com/sonamagazine/" target="_blank"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		  </div>
+		</header>
+		<!-- END: header -->
 
-    <div class="main-content">
+ <div class="main-content">
         <h2 class="artist-name">SONA <em>apresenta</em> CLARISSE AIRES</h2>
 
         <img src="images/clarisse1.png" alt="Clarisse Aires" class="artist-image">
 
-        <h3 class="article-title">O APRENDIZADO E O DESVIO, A ARTE DE CRIAR ESPAÇOS
-</h3>
+        <h3 class="article-title">O APRENDIZADO E O DESVIO, A ARTE DE CRIAR ESPAÇOS</h3>
+
+
 <p class="author-name">Henrique Gomes</p>
 
 <div class="language-switch">
@@ -227,14 +90,28 @@
     <span>ENG</span>
   </a>
 </div>
-        <iframe style="border: 0; width: 700px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=2046717398/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="https://sonamag.bandcamp.com/album/sona-presents-clarisse-aires">SONA presents Clarisse Aires by Clarisse Aires</a></iframe>
-    </div>
 
-    <div class="artist-bio">
 
-        
 
-    <p><a href="https://www.instagram.com/clarisseaires/" target="_blank">Clarisse Aires</a> chegou à experimentação sem pular etapas. Aprendeu teoria, estudou execução, se dedicou à técnica da flauta passando pela rígida formação universitária em música, onde, como ela mesma diz, “a competência é medida por quão preciso você é na cópia”. É o caminho que muitos músicos percorrem: a busca por excelência formal, por domínio do repertório, por afinação e fidelidade ao escrito. Mas Clarisse encontrou, nesse processo, algo que a inquietava. Aos poucos, foi abrindo frestas para improvisar, sair do lugar do intérprete e se aproximar de sua inventividade.
+<div style="width: 90%; max-width: 700px; margin: 0 auto;">
+  <iframe 
+    style="border: 0; width: 100%; height: 208px;" 
+    src="https://bandcamp.com/EmbeddedPlayer/album=2046717398/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" 
+    seamless>
+    <a href="https://sonamag.bandcamp.com/album/sona-presents-clarisse-aires">SONA presents Clarisse Aires by Clarisse Aires</a>
+  </iframe>
+</div>
+
+
+<br>
+
+		<section id="intro" class="about-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+						<div class="intro animate-box">
+							
+  							 <p><a href="https://www.instagram.com/clarisseaires/" target="_blank">Clarisse Aires</a> chegou à experimentação sem pular etapas. Aprendeu teoria, estudou execução, se dedicou à técnica da flauta passando pela rígida formação universitária em música, onde, como ela mesma diz, “a competência é medida por quão preciso você é na cópia”. É o caminho que muitos músicos percorrem: a busca por excelência formal, por domínio do repertório, por afinação e fidelidade ao escrito. Mas Clarisse encontrou, nesse processo, algo que a inquietava. Aos poucos, foi abrindo frestas para improvisar, sair do lugar do intérprete e se aproximar de sua inventividade.
 </p>
 
 <p>Há nesse movimento uma tensão criativa entre forma e liberdade, entre o que se aprende e o que se desaprende para criar. Clarisse Aires opera dentro desse paradoxo. Com sólida formação musical, escolheu a experimentação livre como espaço de descoberta. Nesse sentido, seu trabalho se aproxima ao de artistas como Toshimaru Nakamura, que, após anos como guitarrista e engenheiro de som, abandona os instrumentos convencionais e cria música a partir de uma <em>no-input mixing board</em>, uma mesa de som conectada a si mesma, gerando apenas ruído, microfonia e instabilidade.
@@ -281,24 +158,53 @@
 
 <p>As faixas de Clarisse apresentadas aqui não são exatamente músicas acabadas, no sentido convencional. Elas soam como pequenas mutações, como estruturas em transição, em que a técnica se oferece ao acaso, e o acaso responde de formas inesperadas. É como se a artista estivesse, de fato, trocando de pele ali, diante de nós, não como metáfora vazia, mas como processo vivo.
 </p>
-       
-</div>
-    </div>
-</div>
+						
+						</div>
+					</div>
+				</div>
+			<div>
+		</section>
+
+		
+
 
 <div class="author-bio">
     <img src="images/henrique.png" alt="Henrique Gomes" class="author-photo">
-    <p>Henrique Gomes é editor da SONA Magazine, pesquisador e entusiasta de práticas experimentais em som e arte.</p>
+    <p class="author-text">
+        Henrique Gomes é editor da SONA Magazine, pesquisador e entusiasta de práticas experimentais em som e arte.
+    </p>
 </div>
 
-<footer id="footer" role="contentinfo">
-    <p><small>SONAMAG.COM</small></p>
-</footer>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+
+
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center ">
+						<div class="footer-widget border">
+							<p class="pull-right"><small>SONAMAG.COM</small></p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- END: box-wrap -->
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+

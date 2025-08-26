@@ -1,247 +1,163 @@
+
 <!DOCTYPE html>
-<html class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SONA MAGAZINE - Articles</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            min-height: 100%;
-            background: white;
-            display: flex;
-            flex-direction: column;
-        }
-
-       header .row {
-    display: flex;
-    flex-wrap: nowrap;    /* impede quebra entre logo/menu/ícone */
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .col-md-3,
-.navbar .col-md-6 {
-    display: flex;
-    align-items: center;   /* força logo e ícones a ficarem alinhados */
-    justify-content: center;
-    flex: 0 0 auto; 
-}
-
-header #fh5co-header .container .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header .col-md-3,
-header .col-md-6 {
-  flex: 0 0 auto; /* não deixa abrir espaço extra */
-  width: auto;    /* ignora a largura fixa do Bootstrap */
-}
-header .col-md-3.text-right {
-  text-align: unset;
-  display: flex;
-  justify-content: center; /* centraliza o ícone dentro da coluna */
-}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SONA MAGAZINE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="SONA is a magazine dedicated to experimentation in music and other sound practices. Based in Brazil." />
 
 
-.navbar .col-md-3:first-child {
-    justify-content: flex-start; /* logo SONA à esquerda */
-}
-.navbar .col-md-3:last-child {
-    justify-content: flex-end;   /* ícone insta à direita */
-    padding-right: 0;          /* remove padding extra */
-    margin-right: 0;           /* remove margem extra */
-}
+  	<!-- Facebook and Twitter integration -->
 
-ul.social {
-    margin: 0;   /* garante que não há margem extra */
-    padding: 0;  /* garante que não há padding extra */
-    gap: 0;      /* remove qualquer espaçamento entre itens se houver */
-}
-        .box-wrap {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .container-fluid { max-width: 100% !important; padding-left: 15px; padding-right: 15px; margin: 0 auto; }
-        /* Navbar */
-        .nav.text-center {
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-            gap: 22px;
-            flex-wrap: nowrap;
-            padding-left: 0;
-            margin: 0;
-            list-style: none;
-        }
-        .nav.text-center li { display: inline-block; }
-        .nav.text-center li a { display: inline-block; padding: 6px 4px; color: inherit; text-decoration: none; }
-        @media (max-width: 768px) { .nav.text-center { flex-wrap: wrap; gap: 12px; } }
-        .fh5co-navbar-brand img { display: block; max-width: 100%; height: auto; }
-        .nav .active a { font-weight: bold; color: #E1306C; }
+<meta property="og:title" content="SONA Magazine" />
+<meta property="og:description" content="Music and sonic practices with an experimental pulse." />
+<meta property="og:image" content="https://sonamag.com/images/sona-logo-retangular.png"/>
+<meta property="og:url" content="https://sonamag.com" />
+<meta property="og:site_name" content="SONA Magazine" />
 
-        /* Centralizar título */
-        .main-content {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            margin-bottom: 80px;
-        }
-        h2.title-main { 
-            font-size: 21px; 
-            line-height: 1.3; 
-            color: black; 
-            margin: 0;
-        }
-        h2.title-main span {
-            display: block;
-        }
-        h2.title-main span:first-child { 
-            margin-bottom: 0.5em; 
-            letter-spacing: 1px; 
-            font-weight: normal; 
-        }
-        h2.title-main span:last-child { 
-            letter-spacing: normal; 
-            font-weight: normal; 
-        }
+<meta name="twitter:title" content="SONA Magazine" />
+<meta name="twitter:description" content="Music and sonic practices with an experimental pulse." />
+<meta name="twitter:image" content="https://sonamag.com/images/sona-logo-retangular.png" />
+<meta name="twitter:url" content="https://sonamag.com" />
+<meta name="twitter:card" content="summary_large_image" />
 
-        /* Seção artistas */
-        #work .fh5co-grid {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            height: 250px;
-            margin-bottom: 20px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        #work .fh5co-grid:hover {
-            transform: scale(1.05);
-        }
-        #work .work-title {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background: rgba(0,0,0,0.4);
-            color: white;
-            padding: 10px 0;
-        }
 
-        #work .work-title span {
-    font-size: 14px; /* ajuste o tamanho que quiser */
-    line-height: 1.2; /* controla o espaçamento entre linhas */
-}
 
-        /* Footer */
-        footer#footer {
-            width: 100%;
-            padding: 10px 20px;
-            text-align: right;
-            background: white;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
-<div class="box-wrap">
-    <header role="banner" id="fh5co-header">
-        <nav class="navbar navbar-default">
-            <div class="row" style="align-items:center;">
-                <div class="col-md-3">
-                    <div class="fh5co-navbar-brand">
-                         <a class="fh5co-logo" href="index.html">
-                            <img src="images/sona-logo-small.png" alt="SONA Logo" width="65" height="65">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav text-center">
-                        <li><a href="about.html"><span>about</span></a></li>
-                        <li class="active"><a href="index.html"><span>articles</span></a></li>
-                        <li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
-    <div class="col-md-3">
-  <ul class="social">
-    <li>
-      <a href="https://www.instagram.com/sonamagazine/" target="_blank" rel="noopener noreferrer">
-        <i class="icon-instagram"></i>
-      </a>
-    </li>
-  </ul>
-</div>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="icon" href="images/favicon.png" type="image/png">
 
-            </div>
-        </nav>
-    </header>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-    <!-- Título centralizado -->
-    <div class="main-content">
-        <h2 class="title-main">
-            <span>SONA MAGAZINE</span>
-            <span>music and sonic practices with an experimental pulse</span>
-        </h2>
-    </div>
+	<link rel="stylesheet" href="css/style.css">
 
-    <!-- Artistas -->
-    <section id="work">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="uiradosreis-eng.html">
-                        <div class="fh5co-grid animate-box" style="background-image: url(images/uira1.png);">
-                            <div class="work-title"><span><strong>SONA</strong> <em>presents</em> <strong>Uirá dos Reis</strong><br><strong>PULSE AND NOISE IN FREEDOM</strong></span></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="kaya-eng.html">
-                        <div class="fh5co-grid animate-box" style="background-image: url(images/kaya1.png);">
-                        <div class="work-title"><span><strong>SONA</strong> <em>presents</em> <strong>KAYA</strong><br><strong>BETWEEN PLAY AND LISTENING,<br> OTHER WAYS OF LIVING</strong></span></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="clarisseaires-eng.html">
-                        <div class="fh5co-grid animate-box" style="background-image: url(images/clarisse1.png);">
-                            <div class="work-title"><span><strong>SONA</strong> <em>presents</em> <strong>Clarisse Aires</strong><br><strong>LEARNING AND DEVIATION,<br>THE ART OF CREATING SPACE</strong></span></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
 
-<!-- Footer -->
-<footer id="footer" role="contentinfo">
-    <p><small>SONAMAG.COM</small></p>
-</footer>
+	</head>
+	<body>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="index.html"><img src="images/sona-logo-small.png" alt="SONA Logo"></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav text-center">
+								<li><a href="about.html"><span>about</span></a></li>
+								<li class="active"><a href="index.html">writings</a></li>
+								<li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
+								<li><a href="contact.html">contact</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="social">
+								<li><a href="https://www.instagram.com/sonamagazine/" target="_blank"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		  </div>
+		</header>
+		<!-- END: header -->
+		<section id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+						<div class="intro animate-box">
+							<h2> SONA MAGAZINE
+  							<p>music and sonic practices with an experimental pulse</p>
+						</h2>
+						</div>
+					</div>
+				</div>
+			<div>
+		</section>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+		<section id="work">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="fh5co-grid animate-box" style="background-image: url(images/uira_menu.png);">
+							<a class="image-popup text-center" href="uiradosreis-eng.html">
+								<div class="work-title">
+									<h2>PULSE AND NOISE IN FREEDOM</h2>
+									<br>
+									<h4>SONA presents Uirá dos Reis</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fh5co-grid animate-box" style="background-image: url(images/kaya_menu.png);">
+							<a class="image-popup text-center" href="kaya-eng.html">
+								<div class="work-title">
+									<h2>BETWEEN PLAY AND LISTENING, OTHER WAYS OF LIVING</h2>
+									<br>
+									<h4>SONA presents KAYA</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="fh5co-grid animate-box" style="background-image: url(images/clarisse_menu.png);">
+							<a class="image-popup text-center" href="clarisseaires-eng.html">
+								<div class="work-title">
+									<h2>LEARNING AND DEVIATION, THE ART OF CREATING SPACE</h2>
+									<br>
+									<h4>SONA presents Clarisse Aires</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			<div>
+		</section>
+
+
+
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center ">
+						<div class="footer-widget border">
+							<p class="pull-right"><small>SONAMAG.COM</small></p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- END: box-wrap -->
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
