@@ -409,12 +409,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 #work .fh5co-grid .image-popup .work-title {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: none;
   margin: 0 10px;
   text-align: center;
   color: #ffffff;
+  padding: 10px 0;
 }
+
+
+/* Para telas pequenas */
+@media screen and (max-width: 480px) {
+  #work .fh5co-grid .image-popup {
+    height: auto;       /* deixa o box crescer com o texto */
+    padding: 15px 10px; /* distancia o texto das bordas */
+  }
+
+  #work .fh5co-grid .image-popup .work-title h2 {
+    font-size: 16px;
+  }
+  #work .fh5co-grid .image-popup .work-title h4 {
+    font-size: 14px;
+  }
+}
+
+
+
+
 #work .fh5co-grid .image-popup .work-title span {
   color: gray;
   letter-spacing: 2px;
