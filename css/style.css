@@ -402,34 +402,24 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;        /* começa no fundo */
   left: 0;
   right: 0;
-  height: 33%;      /* ocupa 1/3 da altura da imagem */
+  height: 50%;      /* ocupa 1/3 da altura da imagem */
   background: rgba(0, 0, 0, 0.6);
   opacity: 1;
   margin: 0;        /* remove margens para ficar certinho */
 }
 #work .fh5co-grid .image-popup .work-title {
   position: relative;
-  top: 0;
-  transform: none;
+  top: 25%;
+  transform: translateY(-50%);
   margin: 0 10px;
   text-align: center;
   color: #ffffff;
-  padding: 10px 0;
 }
 
 
-/* Para telas pequenas */
 @media screen and (max-width: 480px) {
-  #work .fh5co-grid .image-popup {
-    height: auto;       /* deixa o box crescer com o texto */
-    padding: 15px 10px; /* distancia o texto das bordas */
-  }
-
-  #work .fh5co-grid .image-popup .work-title h2 {
-    font-size: 16px;
-  }
-  #work .fh5co-grid .image-popup .work-title h4 {
-    font-size: 14px;
+  #work .fh5co-grid .image-popup .work-title {
+    top: 30%;   /* sobe mais ainda em telas pequenas */
   }
 }
 
