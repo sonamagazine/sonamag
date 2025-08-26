@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONA presents Clarisse Aires / SONA MAGAZINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background: white;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .box-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        header .row {
+            display: flex;
+            align-items: center; /* alinha logo, menu e ícones verticalmente */
+        }
+        .nav.text-center {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: nowrap;
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .nav.text-center li { display: inline-block; }
+        .nav.text-center li a { display: inline-block; padding: 6px 4px; color: inherit; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav.text-center { flex-wrap: wrap; gap: 12px; }
+            header .row { flex-wrap: wrap; }
+        }
+        .fh5co-navbar-brand img { display: block; max-width: 100%; height: auto; }
+        .nav .active a { font-weight: bold; color: #E1306C; }
+
+        /* Conteúdo central */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .artist-name {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            font-size: 28px;
+        }
+        .article-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+        .artist-name .line {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .artist-name .artist {
+            margin-bottom: 30px;
+        }
+
+        .artist-image {
+            max-width: 720px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1.5em;
+        }
+
+.language-switch {
+  max-width: 720px;
+  width: 100%;
+  margin: -20px auto 30px auto; /* ajusta espaçamento */
+  text-align: right; /* alinha à direita, mesmo do autor */
+}
+
+.language-switch a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none; /* remove underline do link */
+}
+
+.language-switch img {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: auto;
+}
+
+.language-switch span {
+  display: block;
+  font-weight: bold; /* negrito */
+  font-size: 12px;
+  color: black; /* cor preta */
+}
+
+.language-switch a:link span,
+.language-switch a:visited span,
+.language-switch a:hover span,
+.language-switch a:active span {
+  color: black; /* força sempre preto */
+}
+
+        /* Autor */
+        .author-name {
+            text-align: right;
+            font-size: 14px;
+            font-style: italic;
+            margin: 10px 0 30px 0;
+            max-width: 720px;
+            width: 100%;
+            margin-bottom: 4em;
+        }
+        .author-bio {
+            max-width: 720px;
+            margin: 40px auto 20px auto;
+            text-align: left;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .author-bio .author-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 2px;
+        }
+
+        /* Artigo */
+        .artist-bio {
+            max-width: 720px;
+            text-align: justify;
+            line-height: 1.8;
+            padding: 20px;
+            margin: 0 auto 40px auto;
+        }
+        .artist-bio p {
+            margin-bottom: 1.5em;
+            text-indent: 0.5in;
+        }
+
+        /* Footer */
+        footer#footer {
+            width: 100%;
+            padding: 10px 20px;
+            text-align: right;
+            background: white;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="box-wrap">
+    <header role="banner" id="fh5co-header">
+        <nav class="navbar navbar-default">
+            <div class="row" style="align-items:center;">
+                <div class="col-md-3">
+                    <div class="fh5co-navbar-brand">
+                        <a class="fh5co-logo" href="index.html">
+                            <img src="images/sona-logo-small.png" alt="SONA Logo" width="65" height="65">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav text-center">
+                        <li><a href="index.html"><span>about</span></a></li>
+                        <li class="active"><a href="index.html"><span>articles</span></a></li>
+                        <li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="social">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li>
+  <a href="https://www.instagram.com/sonamagazine/" target="_blank" rel="noopener noreferrer">
+    <i class="icon-instagram"></i>
+  </a>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2 class="artist-name">SONA <em>presents</em> CLARISSE AIRES</h2>
+
+        <img src="images/clarisse1.png" alt="Clarisse Aires" class="artist-image">
+
+        <h3 class="article-title">LEARNING AND DEVIATION, THE ART OF CREATING SPACE
+</h3>
+<p class="author-name">Henrique Gomes</p>
+
+<div class="language-switch">
+  <a href="clarisseaires-ptbr.html" title="Portuguese version">
+    <img src="images/brazil-flag.png" alt="Portuguese">
+    <span>PT-BR</span>
+  </a>
+</div>
+        <iframe style="border: 0; width: 700px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=2046717398/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="https://sonamag.bandcamp.com/album/sona-presents-clarisse-aires">SONA presents Clarisse Aires by Clarisse Aires</a></iframe>
+    </div>
+
+    <div class="artist-bio">
+
+        
+
+<p><a href="https://www.instagram.com/clarisseaires/" target="_blank">Clarisse Aires</a> approached experimentation without skipping any steps. She studied theory, honed her performance skills, and dedicated herself to mastering the flute through the rigorous training of a university music program, where, as she puts it, “competence is measured by how precisely you can copy.” This is a path many musicians follow: pursuing formal excellence, mastering repertoire, achieving perfect pitch, and staying faithful to the score. Yet, along the way, Clarisse discovered something that unsettled her. Gradually, she began making room for improvisation, stepping out of the role of interpreter, and moving closer to her own inventiveness. </p>
+
+<p>Within this journey lies a creative tension between structure and freedom, between what is learned and what must be unlearned to create. Clarisse operates within this paradox. With a solid musical foundation, she chose free experimentation as a space for discovery. In this sense, her work resonates with artists like Toshimaru Nakamura, who, after years as a guitarist and sound engineer, abandoned conventional instruments to make music with a <em>no-input mixing board</em>, a console connected to itself, generating only noise, feedback, and instability.
+</p>
+
+<p>Another comparison might be Tom Zé, whose career is defined by a constant reinvention of Brazilian song. Trained in composition and conducting in Bahia, Tom Zé never abandoned technical sophistication, but used it as a springboard for disobedience, incorporating industrial noises, subverting popular music structures with collages, irony, and formal experimentation. In Clarisse’s work, the same urgency to disrupt expectations of the “correct sound” becomes a deliberate technique, allowing music to emerge from risk.
+</p>
+
+<p>Today, her drive to experiment takes shape in work that resists easy categorization. Clarisse is producing her next album, <em>Trocando de Pele</em> (“Shedding Skin”), a title referencing how snakes must shed their old skin to continue living. The metaphor is precise. Her music carries a similar impulse for transformation, leaving behind forms that no longer serve. While rooted in Brazilian music, her path is not bound by genre or fixed structures. Melody and arrangement coexist with noise, fragments, breath, and silence, each element treated as possibility, not ornament.
+</p>
+
+<p><em>Trocando de Pele</em> evokes a lineage of artists who navigate the boundaries between popular and experimental music without attempting to resolve them. There is something of Juçara Marçal’s <a href="https://jucaramarcal.bandcamp.com/album/delta-est-cio-blues" target="_blank"><em>Delta Estácio Blues</em></a> (2021), where electronic noise and rhythmic ancestry pulse together, or of Arrigo Barnabé’s 1980s explorations, when song was dissected to reveal its fissures. Similarly, Clarisse challenges the repertoire that shaped her. She reinterprets it, strains it. Using the flute as a guiding thread, she transforms the instrument into an extension of voice and thought, dissolving hierarchies between composition and improvisation, between execution and experimentation.
+</p>
+
+<p>This movement between languages and practices is not a fusion, but an invention of possible spaces. “Experimentation doesn’t fit everywhere”, Clarisse says, “so my process is precisely about making it fit”. This statement encapsulates her work: creating conditions for distinct elements to coexist, even in friction. The quest to make herself fit as an artist is also political. She points out that being a woman in environments that systematically echo Brazil’s structural machismo often requires constant vigilance and resistance.
+</p>
+
+<p>In this sense, Clarisse understands that making music is also about creating space. Her music emerges from this dual gesture: opening room for sound and, alongside it, opening space for herself, both on stage and in the studio.
+</p>
+<img src="images/clarisse2.png" alt="Clarisse Aires" class="artist-image">
+
+<p>In conversation with SONA, Clarisse emphasizes that the flute is not only the gleaming, disciplined European orchestral instrument. Long before that, it was ancestral breath, a tool for healing and communication between worlds, present in Indigenous rituals across the globe, “echoing through many forests”. She also highlights that the flute is a sound of celebration and resistance in Brazil, heard in the pifes of the Northeast, the Cabaçal, and street processions. In this sense, the flute is an instrument in contest, layered with historical, cultural, and symbolic tensions that do not always align.
+</p>
+
+<p>Clarisse does not aim to erase these layers or cling to any single one. Instead, she puts these inheritances under tension, dismantling the idea of a “pure” sound. By using pedals, effects, distortion, and vocal overlays, she expands the flute’s expressive range, reimagining it as an electronic medium. Her gesture is subtle; rather than denying the flute’s classical brilliance, she gently sabotages it, allowing noise to seep in, interweaving voice, fragments, and silence.
+</p>
+
+<p>The result is a listening experience that demands attention. We are no longer facing a “clean” instrument, but an expanded sonic body where error, deviation, and the unexpected are welcomed. In deconstructing brilliance, Clarisse questions the ideal of perfection that has historically excluded divergent voices, bodies, and sounds.
+</p>
+
+<p>The voice frequently appears in her compositions, but not in the traditional sense of a “singer”. Clarisse sings, yes, but as one who breathes, or extends the breath of the flute. Her voice does not occupy the centre, but merges with the instrument, body, and environment. It is a singing that eludes categorization, like Hermeto Pascoal in <em>Música da Lagoa</em> (1985), where the boundaries between melody, noise, speech, and breath dissolve in favour of a broader, organic musicality.
+</p>
+
+<p>More than refusing to choose between flautist or singer, composer or improviser, what defines her work is a refusal of definition itself. Her sound is structured through instability, forms appear only to be transformed, patterns emerge but never settle.
+</p>
+
+<p>This open listening, embracing mistakes, returns, repetition, and deviation, is central to Clarisse’s process. She often records herself alone at home, and from these improvised sessions, she begins shaping her compositions. It is a method from the inside out, rooted in practice, in trial and error. Sound starts as exploration and gradually becomes structure.
+</p>
+<img src="images/clarisse3.png" alt="Clarisse Aires" class="artist-image">
+
+<p>The two tracks accompanying this interview, recorded especially for SONA, act as direct windows into Clarisse’s creative process. In <em>Anambezz</em>, layered whistles and flutes create a noisy, pulsing foundation over which she improvises live. What we hear is a search, each note seems to find its place in space, as if the sound is organizing itself in real time. In <em>Pequenos Rituais Cotidianos</em> (“Small Daily Rituals”), the flute appears alone, free, without harmonic cushion or rhythmic guide, a risky scenario that reveals another kind of force, more concentrated, more subtle.
+</p>
+
+<p>The raw exposure of Clarisse’s music evokes the practice of <em>deep listening</em>, pioneered by composer and accordionist Pauline Oliveros. This is an expanded form of listening, encompassing physical sound, environment, body, inner sensations, and silence. Oliveros incorporated both technological creativity and a spiritual dimension, proposing experiences of presence that transcend time and sonic space. While Clarisse does not follow this path strictly, the kinship is clear. In her work, improvisation serves as a sensitive tool to access less visible layers of creation. As with Oliveros, listening here is a radical act of attention, transforming sound into a field open to the unknown.
+</p>
+
+<p>The tracks presented here are not conventional finished pieces. They resemble small mutations, structures in transition, where technique submits to chance, and chance responds unpredictably. It is as if the artist is, in fact, shedding her skin right before us, not as an empty metaphor, but as a living, breathing process.
+</p>
+       
+</div>
+    </div>
+</div>
+
+<div class="author-bio">
+    <img src="images/henrique.png" alt="Henrique Gomes" class="author-photo">
+   <p>Henrique Gomes is the editor of SONA Magazine, a researcher, and an enthusiast of experimental practices in sound and art.</p>
+</div>
+
+<footer id="footer" role="contentinfo">
+    <p><small>SONAMAG.COM</small></p>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

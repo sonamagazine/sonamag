@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONA presents Uirá dos Reis / SONA MAGAZINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background: white;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .box-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        header .row {
+            display: flex;
+            align-items: center; /* alinha logo, menu e ícones verticalmente */
+        }
+        .nav.text-center {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: nowrap;
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .nav.text-center li { display: inline-block; }
+        .nav.text-center li a { display: inline-block; padding: 6px 4px; color: inherit; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav.text-center { flex-wrap: wrap; gap: 12px; }
+            header .row { flex-wrap: wrap; }
+        }
+        .fh5co-navbar-brand img { display: block; max-width: 100%; height: auto; }
+        .nav .active a { font-weight: bold; color: #E1306C; }
+
+        /* Conteúdo central */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .artist-name {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            font-size: 28px;
+        }
+        .article-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+        .artist-name .line {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .artist-name .artist {
+            margin-bottom: 30px;
+        }
+
+        .artist-image {
+            max-width: 720px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1.5em;
+        }
+
+.language-switch {
+  max-width: 720px;
+  width: 100%;
+  margin: -20px auto 30px auto; /* ajusta espaçamento */
+  text-align: right; /* alinha à direita, mesmo do autor */
+}
+
+.language-switch a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none; /* remove underline do link */
+}
+
+.language-switch img {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: auto;
+}
+
+.language-switch span {
+  display: block;
+  font-weight: bold; /* negrito */
+  font-size: 12px;
+  color: black; /* cor preta */
+}
+
+.language-switch a:link span,
+.language-switch a:visited span,
+.language-switch a:hover span,
+.language-switch a:active span {
+  color: black; /* força sempre preto */
+}
+
+        /* Autor */
+        .author-name {
+            text-align: right;
+            font-size: 14px;
+            font-style: italic;
+            margin: 10px 0 30px 0;
+            max-width: 720px;
+            width: 100%;
+            margin-bottom: 4em;
+        }
+        .author-bio {
+            max-width: 720px;
+            margin: 40px auto 20px auto;
+            text-align: left;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .author-bio .author-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 2px;
+        }
+
+        /* Artigo */
+        .artist-bio {
+            max-width: 720px;
+            text-align: justify;
+            line-height: 1.8;
+            padding: 20px;
+            margin: 0 auto 40px auto;
+        }
+        .artist-bio p {
+            margin-bottom: 1.5em;
+            text-indent: 0.5in;
+        }
+
+        /* Footer */
+        footer#footer {
+            width: 100%;
+            padding: 10px 20px;
+            text-align: right;
+            background: white;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="box-wrap">
+    <header role="banner" id="fh5co-header">
+        <nav class="navbar navbar-default">
+            <div class="row" style="align-items:center;">
+                <div class="col-md-3">
+                    <div class="fh5co-navbar-brand">
+                        <a class="fh5co-logo" href="index.html">
+                            <img src="images/sona-logo-small.png" alt="SONA Logo" width="65" height="65">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav text-center">
+                        <li><a href="index.html"><span>about</span></a></li>
+                        <li class="active"><a href="index.html"><span>articles</span></a></li>
+                        <li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="social">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li>
+  <a href="https://www.instagram.com/sonamagazine/" target="_blank" rel="noopener noreferrer">
+    <i class="icon-instagram"></i>
+  </a>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2 class="artist-name">SONA <em>presents</em> UIRÁ DOS REIS</h2>
+
+        <img src="images/uira1.png" alt="Uirá dos Reis" class="artist-image">
+
+        <h3 class="article-title">PULSE AND NOISE IN FREEDOM</h3>
+<p class="author-name">Henrique Gomes</p>
+
+<div class="language-switch">
+  <a href="uiradosreis-ptbr.html" title="Portuguese version">
+    <img src="images/brazil-flag.png" alt="Portuguese">
+    <span>PT-BR</span>
+  </a>
+</div>
+        <iframe style="border: 0; width: 700px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1984606358/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="https://sonamag.bandcamp.com/album/sona-presents-uir-dos-reis">SONA presents Uirá dos Reis by Uirá dos Reis</a></iframe>
+    </div>
+
+<div class="artist-bio">
+
+    <p>Born in Ceará and raised in Campo Grande, a suburb of Rio de Janeiro, <a href="https://www.uiradosreis.com/en" target="_blank">Uirá dos Reis</a> has lived in Fortaleza (BR) since the age of fifteen, where he has developed a practice that challenges rigid boundaries between artistic disciplines. For more than 25 years, he has moved seamlessly between poetry, music, audiovisual performance, curatorship, and cultural production. His work is grounded in experimental practices from the margins, improvisation as both language and resistance, and the tradition of Brazilian popular song.</p>
+
+    <p>In recent years, this multiplicity seems to have sharpened into a new focus. Uirá has been channelling his experience toward electronic music created exclusively with hardware, that is, physical instruments such as samplers, synthesizers, and drum machines. Within this realm, he finds a way to unite three elements that have always been central to his practice: noise, the body, and a Black perspective on the world. His current sound pulses at the intersection of dancefloor rhythm and experimental density, a space where sound becomes both critique and celebration.</p>
+
+    <p>It all began with the sound of the word. Coming from a literary background, Uirá dos Reis immersed himself in Fortaleza’s poetry scene in the late 1990s, when oral poetry was emerging as a vibrant way to occupy public spaces and experiment aesthetically in the city. But he soon realised that his texts called for a different sense of time. His poems began to stretch, moving beyond the concise format of collective readings. That’s when he began creating soundscapes for his own texts, using the voice as both instrument and raw material.</p>
+
+<img src="images/uira4.png" alt="Uirá dos Reis" class="artist-image">
+
+    <p>On his first album, <a href="https://osc-uro.bandcamp.com/album/o-fant-stico-mundo-do-srhiena-e-de-suas-criaturas" target="_blank"><em>O Fantástico Mundo do Sr. Hiena e de Suas Criaturas</em></a> (2001) (The Fantastic World of Mr. Hyena and His Creatures), Uirá records, manipulates, and distorts layers of his own voice, constructing entire tracks without conventional musical instruments. The album is directly influenced by Mike Patton’s <em>Adult Themes for Voice</em> (1996), an experimental work created solely from extreme and unconventional vocal sounds, as well as by vinyl poetry compilations like Carlos Drummond de Andrade’s <em>Antologia Poética</em> (1978), whose austere and measured sound embodies the tension between written word and spoken voice. In this interplay between poetry and noise, the seeds of what would become the core of Uirá’s work were already visible: a practice that traverses media, stretches genres, and places listening at the heart of the sensory experience.</p>
+
+    <p>Since then, his work has undergone a process of aesthetic radicalization. Uirá has increasingly opened space for noise, improvisation, and unstable forms of composition. During this period, his ear was shaped by avant-garde post-rock and experimental electronic music, from the anxious energy of <em>no wave</em> to Aphex Twin’s sonic architecture, passing through Sonic Youth’s controlled distortion. Beyond stylistic exploration, this deep dive seems driven by a vital need to find languages capable of sustaining a more visceral, untamed, and, whenever possible, free expression.</p>
+
+    <p>This impulse also extended to collaborations. Uirá joined <em>Mirella Hipster</em>, a pioneering noise and free-improvisation band active in Fortaleza from 2007 to 2009, formed by four “non-musicians”: filmmaker brothers Luiz and Ricardo Pretti, philosopher Eduardo Escarpinelli, and Uirá, the poet of the group and manipulator of samples and effects (including guitar, which he used extensively at the time). Within this context, improvisation became a shared language, a way to negotiate between differing perspectives.</p>
+
+    <p>Over time, Uirá began to study music more systematically, while never relinquishing the formal freedom that has always guided his practice. It was at this stage that he, as a composer, started approaching Brazilian song more directly, particularly samba and bossa nova. In the interview with SONA, he notes: “I have a lot of influence from samba and Brazilian music, especially the older ones. These genres strongly influence my work, even if it doesn’t always seem obvious”. He adds, “I listened to and studied João Gilberto for a long time while working in noise”.</p>
+
+    <p>Uirá’s lifelong familiarity with João Gilberto, from listening to bossa nova at home with his parents in childhood, reflects a refined attention to rhythmic detail and the use of silence as a structural element. These qualities permeate Uirá’s work even in its noisiest moments. As a listener, he has always been attuned to Brazilian popular music; what has changed is how these elements have become integrated into his own compositional voice.</p>
+
+<p>Even in his noise albums, rhythm persists as a subterranean layer, a secret pulse that organizes the chaos. This attention to microstructure, syncopation, offbeats, and the internal swing of tracks connects his work to a less obvious lineage of experimental music, one that, rather than rejecting the body, summons it.</p>
+
+<p>In this sense, a parallel can be drawn with the concept of <em>illbient</em>, coined by DJ Spooky (Paul Miller) in the 1990s to describe a sonic aesthetic that merges ambient, dub, hip hop, and noise. The term itself carries a productive tension: <em>ambient</em>, a genre often associated with ethereal landscapes and Eurocentric whiteness; and <em>ill</em>, a hip-hop term rooted in street slang and subversive power. Spooky advocates for a dissonant, fragmented listening experience that, even when removed from the dancefloor, preserves a sense of rhythmic collage and evokes, obliquely, the Afro-diasporic sonic legacy.</p>
+
+<p>Uirá pursues a similar approach: starting from noise, a field also established as experimental and predominantly white, he embeds it in a listening practice informed by Blackness and the memory of Brazilian popular music. His noisiest tracks may not overtly reference samba, Brazilian funk, or other popular rhythms, but they reveal a deep ear for their internal dynamics. Rhythm here functions as a structural ghost, a subterranean tension guiding the listener even when the sound appears to unravel. In both cases, the body does not disappear; it is summoned in subtler, less obvious way, but no less political.</p>
+
+<p>While noise and collage remain part of his practice, Uirá now directs his work toward danceable electronic music, exploring more pulsed beats and structures designed for the dancefloor. The shift from computer to dedicated hardware, using machines like the Elektron Digitone II and Digitakt II, has also changed his musical approach. For Uirá, working with physical instruments demands a different kind of listening, more tactile, less mediated by generic interfaces. In this sense, Uirá’s use of hardware is also choreographic: his composition unfolds through gesture, through the immediate dialogue between body and machine. The dancefloor, in this context, is not only the destination but also the origin, the source from which the sonic form emerges.</p>
+
+<img src="images/uira2.png" alt="Uirá dos Reis" class="artist-image">
+
+<p>His current performances operate in a hybrid mode. They are live compositions that engage with DJ practice, combining pre-established structures with improvisation, remixing, and real-time layering. This creates an intriguing tension between control and surrender, planning and chance. It is here that his reference genres, techno, Brazilian funk, and samba, intertwine, forming a single affective and political map.</p>
+
+<p>For Uirá, these styles share a common root: “I see techno, funk, and samba as pillars of urban Black music (…) the link between them is obviously Blackness, the celebration of the body, the celebration of partying”. This statement encapsulates a musical vision that understands these genres as expressions of a peripheral culture of resistance, where the body and pleasure occupy a central political role. Here, the party is not an escape but an affirmation. Detroit techno, samba in Rio’s suburban circles, and funk in Brazilian favelas arise in contexts of social inequality while constructing collective forms of expression based on rhythm, dance, and cultural assertion. By weaving these references into his performances and compositions, Uirá creates a network of resonances that affirms a Black and peripheral listening practice, not as distant quotation, but as a living, vital language.</p>
+
+<p>From the same perspective, Uirá explores the relationship between sound and image. In <em>Vermelho e Preto</em> (2025), his most recent audiovisual performance, developed with Gabriel de Sousa and Ivan Timbó, the team manipulates video in real time in response to sound using TouchDesigner. The visuals respond autonomously and sometimes unpredictably, creating a disjunction between what is seen and what is heard, intensifying the performance. The project blends global Black electronic music with traditional Brazilian percussion, such as samba and terreiro rhythms. The interplay of sound and image transforms the performance into a political celebration of Blackness, reaffirming Black culture as a space of resistance and creation, merging tradition and innovation with sensitivity. An album derived from this project is scheduled for release at the end of 2025.</p>
+
+<img src="images/uira3.png" alt="Uirá dos Reis" class="artist-image">
+
+<p>Beyond his work as an artist, Uirá is also an editor, curator, and cultural organiser. In 2010, he founded <a href="https://suburbanaco.bandcamp.com" target="_blank"><em>SuburbanaCo.</em></a>, initially “almost as a joke” against the formalism of the music market. It was just him, alone in a room with an old computer and few resources, creating a label as if constructing an alternate world where his work could exist. Yet what began as provocation quickly became a real platform. SuburbanaCo. grew, established itself as a reference in Fortaleza’s experimental scene, and began releasing works by other local artists. One such release was Vitor Colares’ album <a href="https://suburbanaco.bandcamp.com/album/saboteur" target="_blank"><em>Saboteur</em></a> (2012), issued on vinyl, a still-rare format for emerging artists in the city. At a time when the vinyl revival in Fortaleza was mainly tied to nostalgic reissues, releasing contemporary original work on this medium was itself a political gesture toward the new.</p>
+
+<p>Recorded especially for SONA, the two unreleased tracks accompanying this interview reveal different facets of Uirá’s current practice. <em>Bad-add Volt-Mix</em> moves at a measured pace, with syncopated beats and percussion creating a mysterious atmosphere without losing its danceable swing. The track has a nocturnal, almost cinematic feel, reminiscent of late-night driving soundtracks. Subtle rhythmic details and layers of sound generate tension and anticipation, functioning as a warm-up for something larger, unhurried, yet fully present.</p>
+
+<p><em>“Ninguém é de Ferro”</em> ("Nobody's Made of Steel"), at 170 bpm, accelerates the pace and embraces a more cerebral, electronic approach. Drawing on IDM and drum and bass influences, it mixes complex patterns with small variations that break repetition. The result is music that works both on the dancefloor and for attentive listening, balancing precision and improvisation.</p>
+
+<p>Together, these tracks showcase Uirá’s experimental spirit, seeking a balance between structure and freedom, repetition and surprise, dance and focused listening. Perhaps the defining feature of this phase is precisely that: creating music that exists in friction, between styles, modes of listening, and shifting temporalities.</p>
+
+<p>For Uirá, freedom has become method. His trajectory suggests that independence and experimentation in the arts are not moral imperatives but tactical positions, choices renewed with every project, every album, every live performance. And perhaps it is precisely by working in this space of instability that his music feels so alive. It insists on existing, despite and through contradictions.</p>
+
+</div>
+
+       
+</div>
+    </div>
+</div>
+
+<div class="author-bio">
+    <img src="images/henrique.png" alt="Henrique Gomes" class="author-photo">
+    <p>Henrique Gomes is the editor of SONA Magazine, a researcher, and an enthusiast of experimental practices in sound and art.</p>
+</div>
+
+<footer id="footer" role="contentinfo">
+    <p><small>SONAMAG.COM</small></p>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

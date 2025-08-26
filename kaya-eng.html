@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONA presents KAYA / SONA MAGAZINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background: white;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .box-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        header .row {
+            display: flex;
+            align-items: center; /* alinha logo, menu e ícones verticalmente */
+        }
+        .nav.text-center {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: nowrap;
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .nav.text-center li { display: inline-block; }
+        .nav.text-center li a { display: inline-block; padding: 6px 4px; color: inherit; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav.text-center { flex-wrap: wrap; gap: 12px; }
+            header .row { flex-wrap: wrap; }
+        }
+        .fh5co-navbar-brand img { display: block; max-width: 100%; height: auto; }
+        .nav .active a { font-weight: bold; color: #E1306C; }
+
+        /* Conteúdo central */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .artist-name {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            font-size: 28px;
+        }
+        .article-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+        .artist-name .line {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .artist-name .artist {
+            margin-bottom: 30px;
+        }
+
+        .artist-image {
+            max-width: 720px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1.5em;
+        }
+
+.language-switch {
+  max-width: 720px;
+  width: 100%;
+  margin: -20px auto 30px auto; /* ajusta espaçamento */
+  text-align: right; /* alinha à direita, mesmo do autor */
+}
+
+.language-switch a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none; /* remove underline do link */
+}
+
+.language-switch img {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: auto;
+}
+
+.language-switch span {
+  display: block;
+  font-weight: bold; /* negrito */
+  font-size: 12px;
+  color: black; /* cor preta */
+}
+
+.language-switch a:link span,
+.language-switch a:visited span,
+.language-switch a:hover span,
+.language-switch a:active span {
+  color: black; /* força sempre preto */
+}
+
+        /* Autor */
+        .author-name {
+            text-align: right;
+            font-size: 14px;
+            font-style: italic;
+            margin: 10px 0 30px 0;
+            max-width: 720px;
+            width: 100%;
+            margin-bottom: 4em;
+        }
+        .author-bio {
+            max-width: 720px;
+            margin: 40px auto 20px auto;
+            text-align: left;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .author-bio .author-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 2px;
+        }
+
+        /* Artigo */
+        .artist-bio {
+            max-width: 720px;
+            text-align: justify;
+            line-height: 1.8;
+            padding: 20px;
+            margin: 0 auto 40px auto;
+        }
+        .artist-bio p {
+            margin-bottom: 1.5em;
+            text-indent: 0.5in;
+        }
+
+        /* Footer */
+        footer#footer {
+            width: 100%;
+            padding: 10px 20px;
+            text-align: right;
+            background: white;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="box-wrap">
+    <header role="banner" id="fh5co-header">
+        <nav class="navbar navbar-default">
+            <div class="row" style="align-items:center;">
+                <div class="col-md-3">
+                    <div class="fh5co-navbar-brand">
+                        <a class="fh5co-logo" href="index.html">
+                            <img src="images/sona-logo-small.png" alt="SONA Logo" width="65" height="65">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav text-center">
+                        <li><a href="index.html"><span>about</span></a></li>
+                        <li class="active"><a href="index.html"><span>articles</span></a></li>
+                        <li><a href="https://sonamag.bandcamp.com" target="_blank">tracks</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="social">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li>
+  <a href="https://www.instagram.com/sonamagazine/" target="_blank" rel="noopener noreferrer">
+    <i class="icon-instagram"></i>
+  </a>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2 class="artist-name">SONA <em>presents</em> KAYA</h2>
+
+        <img src="images/kaya1.png" alt="KAYA" class="artist-image">
+
+        <h3 class="article-title">BETWEEN PLAY AND LISTENING, OTHER WAYS OF LIVING</h3>
+<p class="author-name">Henrique Gomes</p>
+
+<div class="language-switch">
+  <a href="kaya-ptbr.html" title="Portuguese version">
+    <img src="images/brazil-flag.png" alt="Portuguese">
+    <span>PT-BR</span>
+  </a>
+</div>
+        <iframe style="border: 0; width: 700px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=2432018523/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="https://sonamag.bandcamp.com/album/sona-presents-kaya">SONA presents KAYA by Roberta Kaya</a></iframe>
+    </div>
+
+    <div class="artist-bio">
+
+        
+
+            <p>Since childhood, <a href="https://www.instagram.com/robertakaya/" target="_blank">Roberta Kaya</a> knew that music was not just technique, but also a way of being in the world. One of her earliest memories is climbing up a <em>pitomba</em> tree to sing. That gesture already reveals much about her listening, rooted in environment, body, and sensation. When the tree was cut down, sunlight entered harshly into the place where there had once been shade. This loss resonated like a fracture in the landscape, and it also shaped the way she relates to sound: as something alive, mutable, and subject to ending.</p>
+
+            <p>This intimate and transient way of listening to the world runs through Kaya’s entire artistic practice. Her music seems to weave narratives that conjure presences and lay bare absences. Her instruments, often built by her own hands, carry a deliberate precariousness, as if each sound were an attempt to capture something on the verge of vanishing. The piano loops that sometimes anchor her performances function as a provisional ground: they offer structure, but are soon interrupted, destabilised by the entry of new timbres and noises, tested there in real time, before the audience. Rather than separating planning and action, Kaya seems to fuse the two into an intuitive process, where error is learning, and sound may emerge from the accident that is welcomed.</p>
+
+            <p>In Kaya’s music, technology is tool but also protagonist. Her instruments (handmade pedals, PVC pipes blown like flutes, home-built synthesisers) are assembled with improvised solutions. The making of these devices is directly bound to the way they are presented. Each enters the scene as a character, revealed to the audience with care, in a gesture of sharing.</p>
+
+<img src="images/kaya2.png" alt="KAYA" class="artist-image">
+
+            <p>This way of introducing sonic elements as if they were characters recalls the performances of multidisciplinary artists such as Concepción Huerta and Jiyoung Wi. In their recently released <a href="https://concepcionhuerta.bandcamp.com/album/concepci-n-huerta-jiyoung-wi" target="_blank">collaborative cassette on the Aurora Central label</a>, the Mexican and South Korean artists build dense soundscapes from layered field recordings, analogue synthesisers and live-manipulated instruments such as a distorted, fragmented violin. Their performance emphasises a tactile relationship with devices, where exposed wires, visible patches, faults and noises are not hidden but integrated into the language of the work.</p>
+
+            <p>Another significant example within this aesthetic frontier between sound, space and object is the Brazilian collective <em>Chelpa Ferro</em> (1995–). Formed by visual artists, the group creates installations and performances that merge noise, music and sound sculpture, placing sound as a structural element of an expanded sensory experience. The physical presence of objects, the exposed cables, the juxtaposition of noises and images, as well as the performative relation to space, reinforce the idea that music can be as much a tactile as an auditory experience. This poetics of sound, moving between organised disorder and partial control, finds an echo in Kaya’s work, which also values materiality and imperfection in her instruments and performances.</p>
+
+            <p>A striking example is the video <a href="https://youtu.be/kr5xD5uRpdo" target="_blank"><em>Performance Sonora (pretasonora)</em></a> (2025), available on her YouTube channel. In it, Kaya engages with a kind of sound sculpture: a structure made of metal, wood and PVC pipes, equipped with contact microphones (piezo) that capture vibrations directly from the materials. These sounds are processed live with effects such as reverb, delay and distortion, creating dense and unpredictable sonic textures. The structure features wires, coiled springs, screws and hanging bolts, composing a hybrid object between instrument and installation.</p>
+
+<img src="images/kaya3.png" alt="KAYA" class="artist-image">
+
+            <p>Kaya explores it with her fingers, but also with tools such as screwdrivers and a file. At one point in the video, she scatters stones across the metal surface and manipulates them slowly, drawing out new noises from friction and contact. Here, the aim is not to build conventional melodies or harmonies, but to explore the acoustic properties of objects, how they vibrate, resonate, and respond to touch, in an approach that shifts music into the territory of sensory and spatial investigation. She also employs a wind instrument built from PVC pipe, its sound digitally transformed.</p>
+
+            <p>That same wind instrument reappears in the tracks Kaya recorded exclusively for SONA. The use of homemade instruments brings a sense of continuity between her sound art and her music. It is not simply about reusing materials or timbres, but about insisting on a single poetic logic regardless of the chosen path: to explore sounds through the physicality of objects and through improvisation.</p>
+
+            <p>In <em>Synthindo</em>, musical ideas unfold continuously, as though sprouting organically from one another. Guitar, PVC pipes, MIDI controller and loops intertwine in the construction of a sonic dramaturgy: a non-verbal narrative in which sonic gestures unfold into small scenes, like in an abstract theatre. Each sound is treated as a body, each instrument as a singular voice.</p>
+
+            <p>In <em>Plastycidade</em>, Kaya explores her homemade wind instrument, built with two openings that she covers or reveals with her hands to control the intensity and vibration of the sound. Through creative use of delay, she layers different phrases played on the instrument, creating a density that transforms the breath into an “organic drone”, as she calls it, almost human. This image reinforces the way the handmade and the technological intertwine in her practice.</p>
+
+            <p>Her relationship with electronics, for instance, rests on attentive listening to the possibilities and limitations of her own devices. Working with homemade instruments, sound is not shaped to be clean, controlled or predictable. It is precisely in the physical limits of materials that Kaya finds new aesthetic possibilities.</p>
+
+            <p>This approach brings her music close to the principles of <em>glitch art</em>, a visual and sonic language that appropriates technical failures, bugs and interferences as creative resources. Rather than correcting what goes astray, Kaya emphasises breakages and disruptions. There is a certain pleasure in destabilising. Just as <em>glitch art</em> interrupts the smoothness of the digital image to expose its innards, Kaya’s music imposes moments of failure, suspension and noise that place the listener in a state of alertness.</p>
+
+            <p>In <em>Synthindo</em>, for example, it is possible to hear how bases and textures that seemed to support the sonic flow are suddenly withdrawn, leaving behind a momentary void, almost as if the ground had disappeared. The artist says she “likes it this way”, that her music provokes a sense of disorientation, a kind of estrangement that keeps the listener open, imagining what else could emerge or what might have been. This refusal to deliver a comfortable structure is also a way of affirming an active, critical listening, one that embraces uncertainty as a creative value.</p>
+
+<img src="images/kaya4.png" alt="KAYA" class="artist-image">
+
+            <p>For Kaya, this uncertainty cuts through her decisions as an artist. As a multi-instrumentalist, she defines herself as a “Jack of all trades, master of none”, an affirmation that, far from denoting insecurity, reveals a clear aesthetic stance. It is within this space of trial and error, sometimes unstable, sometimes surprising, that her creation takes shape and intensity.</p>
+
+            <p>This openness to the unknown has roots in a sensitivity that Kaya often associates with childhood. She says she feels her childhood still very close, not as nostalgia but as a living presence. For Kaya, play is a legitimate and powerful form of sonic research. By placing play at the centre of the creative process, she challenges the idea that art must be grand to be relevant. She insists that her goal is not to become “a great star” or “an immortal artist”, but to cultivate well-being, both individual and collective, here and now.</p>
+
+            <p>In this context, more than an escape or a distraction, play is a stance that rejects the productivist and competitive logic that often governs artistic practice. In Kaya’s work, this playful dimension does not imply a lack of rigour, but reveals an ethic that finds, in sound, pathways to imagine other ways of living and relating to the world.</p>
+        </div>
+    </div>
+</div>
+
+<div class="author-bio">
+    <img src="images/henrique.png" alt="Henrique Gomes" class="author-photo">
+    <p>Henrique Gomes is the editor of SONA Magazine, a researcher, and an enthusiast of experimental practices in sound and art.</p>
+</div>
+
+<footer id="footer" role="contentinfo">
+    <p><small>SONAMAG.COM</small></p>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
